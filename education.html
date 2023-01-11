@@ -1,0 +1,143 @@
+<html>
+<head>
+<title>Amiesya's website</title>
+	<link href="style.css" rel="stylesheet">
+	<meta name="viewport" content="width ="device-width, initial-scale=1">
+</head>
+<body>
+
+<section id="Bg">
+	
+<div id="sideNav">
+	<nav>
+	<ul>
+		<li><a href="index.html">HOME</a></li>
+		<li><a href="biodata.html">PERSONAL</a></li>
+		<li class="active"><a href="#">EDUCATION</a></li>
+		<li><a href="experience.html">EXPERIENCE</a></li>
+		<li><a href="family.html">FAMILY</a></li>
+		<li><a href="movies.html">MOVIES</a></li>
+		<li><a href="gallery.html">GALLERY</a></li>
+	</ul>
+	</nav>
+
+</div>
+<div id="menuBtn">
+	<img src="asset/image/menu.png" id="menu">
+</div>
+
+<div id="Education">
+	<div class="title-text">
+	<p>EDUCATION</p>
+	<h1>My Achievements</h1>
+	</div>
+	<div class="Education-box">
+		<div class="single-Education">
+			<img src="asset/image/logo.jpg">
+			<div class="overlay"></div>
+			<div class="Education-desc">
+				<h3>visit my <a href="https://ms.wikipedia.org/wiki/Sekolah_Kebangsaan_Taman_Seri_Wang" Target="_blank" style="color: #ADA2FF">primary school</h3></a>
+				<br>
+				<p>UPSR</p>
+				<sup>2A 2B 1C</sup>
+			</div>
+		</div>
+		<div class="single-Education">
+			<img src="asset/image/CheTom.jpg">
+			<div class="overlay"></div>
+			<div class="Education-desc">
+				<h3>visit my <a href="https://youtu.be/h33yeleCBhk" Target="_blank" style="color: #F56EB3"> secondary school</h3></a>
+			<br>
+				<p>PT3</p>
+				<sup>1A 3B 2C 1D</sup>
+<br><br>
+				<p>SPM</p>
+				<sup>7A 2B</sup>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+
+<section id="Footer">
+	<div class="ftr">Follow me
+<br>
+	<a href="https://www.tiktok.com/@cosa.my?is_from_webapp=1&sender_device=pc" Target="_blank"><img src="asset/image/tik-tok.png" width="40px"></a>
+	<a href="https://www.instagram.com/syaaminus/" Target="_blank"><img src="asset/image/instagram.png" width="40px"></a>
+	</div>
+<br><br>
+<marquee>THANK YOU ;)</marquee>
+	
+</section>
+
+
+
+<script>
+var menuBtn = document.getElementById("menuBtn")
+var sideNav = document.getElementById("sideNav")
+var menu = document.getElementById("menu")
+
+menuBtn.onclick = function(){
+	if (sideNav.style.right== "-250px") {
+		sideNav.style.right = "0";
+	}
+	else {
+		sideNav.style.right = "-250px";
+	}
+}
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+setInterval(()=>{
+          const time = document.querySelector(".display #time");
+          let date = new Date();
+          let hours = date.getHours();
+          let minutes = date.getMinutes();
+          let seconds = date.getSeconds();
+          let day_night = "AM";
+          if(hours > 12){
+          day_night = "PM";
+          hours = hours - 12;
+           }
+if(seconds < 10){
+             seconds = "0" + seconds;
+           }
+           if(minutes < 10){
+             minutes = "0" + minutes;
+           }
+           if(hours < 10){
+             hours = "0" + hours;
+           }
+           time.textContent = hours + ":" + minutes + ":" + seconds + " "+ day_night;
+         });
+
+</script>
+
+
+</body>
+</html>

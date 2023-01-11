@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>Amiesya's website</title>
+	<link href="style.css" rel="stylesheet">
+	<meta name="viewport" content="width ="device-width, initial-scale=1">
+</head>
+<body>
+
+<section id="Bg">
+
+<div id="sideNav">
+	<nav>
+	<ul>
+		<li><a href="index.html">HOME</a></li>
+		<li><a href="biodata.html">PERSONAL</a></li>
+		<li><a href="education.html">EDUCATION</a></li>
+		<li><a href="experience.html">EXPERIENCE</a></li>
+		<li><a href="family.html">FAMILY</a></li>
+		<li><a href="movies.html">MOVIES</a></li>
+		<li class="active"><a href="#">GALLERY</a></li>
+	</ul>
+	</nav>
+
+</div>
+<div id="menuBtn">
+	<img src="asset/image/menu.png" id="menu">
+</div>
+
+<div id="Gallery">
+	<div class="title-text">
+	<p>MY GALLERY</p>
+<br><br>
+	<h3>Life will move on, but at least these memories are forever</h3
+	</div>
+<br><br>
+	<audio id="player" controls loop muted>
+			<source src="asset/sound/those_eyes.mp3" type="audio/mp3">
+		</audio>
+<br>
+	<div class="container-gallery">
+		<h1>PHOTO 2022</h1><br>
+	<div class="content-gallery">
+		<img src="asset/image/p22.jpeg">
+		<img src="asset/image/p21.jpeg">
+		<img src="asset/image/p23.jpeg">
+		<img src="asset/image/photo2.jpeg">
+		<img src="asset/image/p27.jpeg">
+		<img src="asset/image/p28.jpeg">
+		<img src="asset/image/photo13.jpeg">
+		<img src="asset/image/photo00.jpeg">
+		<img src="asset/image/photo6.jpeg">
+		<img src="asset/image/mafia.jpeg">
+		<video controls src="asset/video/vd2.mp4" type="video/mp4"></video>
+	</div>
+	</div>
+</div>
+</section>
+
+<section id="Footer">
+	<div class="ftr">Follow me
+<br>
+	<a href="https://www.tiktok.com/@cosa.my?is_from_webapp=1&sender_device=pc" Target="_blank"><img src="asset/image/tik-tok.png" width="40px"></a>
+	<a href="https://www.instagram.com/syaaminus/" Target="_blank"><img src="asset/image/instagram.png" width="40px"></a>
+	</div>
+<br><br>
+<marquee>THANK YOU ;)</marquee>
+	
+</section>
+
+
+
+<script>
+var menuBtn = document.getElementById("menuBtn")
+var sideNav = document.getElementById("sideNav")
+var menu = document.getElementById("menu")
+
+menuBtn.onclick = function(){
+	if (sideNav.style.right== "-250px") {
+		sideNav.style.right = "0";
+	}
+	else {
+		sideNav.style.right = "-250px";
+	}
+}
+
+</script>
+
+
+</body>
+</html>

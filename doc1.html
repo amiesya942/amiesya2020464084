@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>Amiesya's website</title>
+	<link href="style.css" rel="stylesheet">
+	<meta name="viewport" content="width ="device-width, initial-scale=1">
+</head>
+<body>
+
+<section id="Bg">
+
+<div id="sideNav">
+	<nav>
+	<ul>
+		<li><a href="index.html">HOME</a></li>
+		<li><a href="biodata.html">PERSONAL</a></li>
+		<li><a href="education.html">EDUCATION</a></li>
+		<li><a href="experience.html">EXPERIENCE</a></li>
+		<li><a href="family.html">FAMILY</a></li>
+		<li><a href="movies.html">MOVIES</a></li>
+		<li><a href="gallery.html">GALLERY</a></li>
+	</ul>
+	</nav>
+
+</div>
+<div id="menuBtn">
+	<img src="asset/image/menu.png" id="menu">
+</div>
+
+<div id="Experience">
+	<div class="table-img">
+		<img src="asset/image/ppd.jpeg">
+    			</tr>
+		</table>
+	<button><a href="experience.html">Back</a></button>
+	</div>
+</div>
+</section>
+
+<section id="Footer">
+	<div class="ftr">Follow me
+<br>
+	<a href="https://www.tiktok.com/@cosa.my?is_from_webapp=1&sender_device=pc" Target="_blank"><img src="asset/image/tik-tok.png" width="40px"></a>
+	<a href="https://www.instagram.com/syaaminus/" Target="_blank"><img src="asset/image/instagram.png" width="40px"></a>
+	</div>
+<br><br>
+<marquee>THANK YOU ;)</marquee>
+	
+</section>
+
+
+<script>
+var menuBtn = document.getElementById("menuBtn")
+var sideNav = document.getElementById("sideNav")
+var menu = document.getElementById("menu")
+
+menuBtn.onclick = function(){
+	if (sideNav.style.right== "-250px") {
+		sideNav.style.right = "0";
+	}
+	else {
+		sideNav.style.right = "-250px";
+	}
+}
+
+
+</script>
+
+
+</body>
+</html>

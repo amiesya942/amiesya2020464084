@@ -1,0 +1,159 @@
+<html>
+<head>
+<title>Amiesya's website</title>
+	<link href="style.css" rel="stylesheet">
+	<meta name="viewport" content="width ="device-width, initial-scale=1">
+</head>
+<body>
+
+<section id="Bg">
+	
+<div id="sideNav">
+	<nav>
+	<ul>
+		<li><a href="index.html">HOME</a></li>
+		<li><a href="biodata.html">PERSONAL</a></li>
+		<li><a href="education.html">EDUCATION</a></li>
+		<li><a href="experience.html">EXPERIENCE</a></li>
+		<li><a href="family.html">FAMILY</a></li>
+		<li class="active"><a href="#">MOVIES</a></li>
+		<li><a href="gallery.html">GALLERY</a></li>
+	</ul>
+	</nav>
+
+</div>
+<div id="menuBtn">
+	<img src="asset/image/menu.png" id="menu">
+</div>
+
+<div id="Movies">
+	<div class="title-text">
+	<p>FAVOURITE MOVIES</p>
+	<h1>The best movie I have ever seen </h1>
+	</div
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+		<center><img src="asset/image/photo12.jpg" width="50%" height="60%"></center>
+  		<div class="caption">Train To Busan: Peninsula</div>	
+	</div>
+
+	<div class="mySlides fade">
+  		<center><img src="asset/image/conjuring.jpg" width="50%" height="60%"></center>
+		<div class="caption">Cojuring</div>
+	</div>
+
+	<div class="mySlides fade">
+  		<center><img src="asset/image/trainbusan.jpg" width="50%" height="60%"></center>
+  		<div class="caption">Train To Busan</div>
+	</div>
+	<div class="mySlides fade">
+  		<center><img src="asset/image/TheNun.jpg" width="50%" height="60%"></center>
+  		<div class="caption">The Nun</div>
+	</div>
+	<div class="mySlides fade">
+  		<center><img src="asset/image/demons.jpg" width="50%" height="60%"></center>
+  		<div class="caption">The Demons</div>
+	</div>
+	<div class="mySlides fade">
+  		<center><img src="asset/image/doctor.jpg" width="50%" height="60%"></center>
+  		<div class="caption">Doctor Strange in the Multiverse of Madness</div>
+	</div>
+	
+	<div class="mySlides fade">
+  		<center><img src="asset/image/ironman.jpg" width="50%" height="60%"></center>
+  		<div class="caption">Iron Man 2008</div>
+	</div>
+
+	<div class="mySlides fade">
+  		<center><img src="asset/image/endgame.jpg" width="50%" height="60%"></center>
+  		<div class="caption">Avengers EndGame</div>
+	</div>
+
+	<div class="mySlides fade">
+  		<center><img src="asset/image/photo11.jpg" width="50%" height="60%"></center>
+  		<div class="caption">Pengabadian Setan</div>
+	</div>
+
+	<div class="mySlides fade">
+  		<center><img src="asset/image/ipman.jpg" width="50%" height="60%"></center>
+  		<div class="caption">IP Man 4</div>
+	</div>
+
+</div>
+
+<div style="text-align:center">
+  	<span class="dot" onclick="currentSlide(1)"></span> 
+  	<span class="dot" onclick="currentSlide(2)"></span> 
+  	<span class="dot" onclick="currentSlide(3)"></span> 
+	<span class="dot" onclick="currentSlide(4)"></span> 
+	<span class="dot" onclick="currentSlide(5)"></span> 
+	<span class="dot" onclick="currentSlide(6)"></span> 
+	<span class="dot" onclick="currentSlide(7)"></span> 
+	<span class="dot" onclick="currentSlide(8)"></span> 
+	<span class="dot" onclick="currentSlide(9)"></span> 
+	<span class="dot" onclick="currentSlide(10)"></span> 
+</div>
+</div>
+</section>
+
+
+
+<section id="Footer">
+	<div class="ftr">Follow me
+<br>
+	<a href="https://www.tiktok.com/@cosa.my?is_from_webapp=1&sender_device=pc" Target="_blank"><img src="asset/image/tik-tok.png" width="40px"></a>
+	<a href="https://www.instagram.com/syaaminus/" Target="_blank"><img src="asset/image/instagram.png" width="40px"></a>
+	</div>
+<br><br>
+<marquee>THANK YOU ;)</marquee>
+	
+</section>
+
+
+
+<script>
+var menuBtn = document.getElementById("menuBtn")
+var sideNav = document.getElementById("sideNav")
+var menu = document.getElementById("menu")
+
+menuBtn.onclick = function(){
+	if (sideNav.style.right== "-250px") {
+		sideNav.style.right = "0";
+	}
+	else {
+		sideNav.style.right = "-250px";
+	}
+}
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+
+</body>
+</html>

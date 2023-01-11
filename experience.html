@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>Amiesya's website</title>
+	<link href="style.css" rel="stylesheet">
+	<meta name="viewport" content="width ="device-width, initial-scale=1">
+</head>
+<body>
+
+<section id="Bg">
+
+<div id="sideNav">
+	<nav>
+	<ul>
+		<li><a href="index.html">HOME</a></li>
+		<li><a href="biodata.html">PERSONAL</a></li>
+		<li><a href="education.html">EDUCATION</a></li>
+		<li class="active"><a href="#">EXPERIENCE</a></li>
+		<li><a href="family.html">FAMILY</a></li>
+		<li><a href="movies.html">MOVIES</a></li>
+		<li><a href="gallery.html">GALLERY</a></li>
+	</ul>
+	</nav>
+
+</div>
+<div id="menuBtn">
+	<img src="asset/image/menu.png" id="menu">
+</div>
+
+<div id="Experience">
+	<div class="title-text">
+	<p>MY EXPERIENCE</p>
+	<h1>I still think it's useful, at least at the current time</h1>
+	</div>
+	<div class="table-exp">
+		<table border="5">
+  			<tr>
+    				<th colspan="2" bgcolor="#2F4F4F">SCHOOL</th>
+				<th bgcolor="#594D5B">SINCE</th>
+   			 	<th bgcolor="#778899">DESCRIPTION</th>
+				
+  			</tr>
+  			<tr>
+    				<td rowspan="1">SKTSW</td>
+				<td><img src="asset/image/sk.jpg"></td>
+				<td>2009 - 2014</td>
+				<td><a href="doc.html">School Library Prefects 2013</a></td>
+				
+    			</tr>
+ 			<tr>
+    				<td rowspan="2">CTGS</td>
+				<td rowspan="2"><img src="asset/image/smk.jpg"></td>
+				<td rowspan="2">2015 - 2019</td>
+    				<td><a href="doc1.html">Handball (Kuala Muda Yan) 2016</a></td>
+			</tr>
+			<tr>
+    				<td><a href="doc2.html">International (Taekwondo) Fit & Fitness Run Malaysia 2019</td>
+  			</tr>
+		</table>
+	</div>
+</div>
+</section>
+
+<section id="Footer">
+	<div class="ftr">Follow me
+<br>
+	<a href="https://www.tiktok.com/@cosa.my?is_from_webapp=1&sender_device=pc" Target="_blank"><img src="asset/image/tik-tok.png" width="40px"></a>
+	<a href="https://www.instagram.com/syaaminus/" Target="_blank"><img src="asset/image/instagram.png" width="40px"></a>
+	</div>
+<br><br>
+<marquee>THANK YOU ;)</marquee>
+	
+</section>
+
+
+<script>
+var menuBtn = document.getElementById("menuBtn")
+var sideNav = document.getElementById("sideNav")
+var menu = document.getElementById("menu")
+
+menuBtn.onclick = function(){
+	if (sideNav.style.right== "-250px") {
+		sideNav.style.right = "0";
+	}
+	else {
+		sideNav.style.right = "-250px";
+	}
+}
+
+
+</script>
+
+
+</body>
+</html>

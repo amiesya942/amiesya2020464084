@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>Amiesya's website</title>
+	<link href="style.css" rel="stylesheet">
+	<meta name="viewport" content="width ="device-width, initial-scale=1">
+</head>
+<body>
+
+<section id="Bg">
+
+<div id="sideNav">
+	<nav>
+	<ul>
+		<li><a href="index.html">HOME</a></li>
+		<li class="active"><a href="#">PERSONAL</a></li>
+		<li><a href="education.html">EDUCATION</a></li>
+		<li><a href="experience.html">EXPERIENCE</a></li>
+		<li><a href="family.html">FAMILY</a></li>
+		<li><a href="movies.html">MOVIES</a></li>
+		<li><a href="gallery.html">GALLERY</a></li>
+	</ul>
+	</nav>
+
+</div>
+<div id="menuBtn">
+	<img src="asset/image/menu.png" id="menu">
+</div>
+
+<class id="Personal">
+	<div class="title-text">
+	<p>PERSONAL</p>
+	<h1>Who am I Actually?</h1>
+	</div>
+	<div class="Personal-box">
+		<div class="Personals">
+			<p><b>Full Name:</b><font color="#FF8DC7"> Noor Amiesya Akila Binti Mohammad Noor</font> <br><br>
+<b>Nickname:</b><font color="#FF8DC7"> Sya </font><br><br>
+<b>Age:</b><font color="#FF8DC7">20 years old</font><br><br>
+<b>Date of Birth:</b><font color="#FF8DC7"> 20<sup>th</sup> September 2002 </font><br><br>
+<b>Place of Birth: </b><font color="#FF8DC7">Hospital Kuala Krai, Kelantan</font><br><br>
+<b>Number of Siblings:</b><font color="#FF8DC7"> 2 (eldest child)</font><font color="#FF8DC7"></font><br><br>
+<b>Nationality:</b> <font color="#FF8DC7">Malaysia </font><br><br>
+<b>Religion:</b><font color="#FF8DC7"> Islam </font><br><br>
+<b>Martial Status:</b><font color="#FF8DC7"> Single</font><br><br>
+<b>Favourite Places: </b></p>
+<ol>
+	<li><font color="#FF8DC7">Penang</font></li>
+	<li><font color="#FF8DC7">Singapore</font></li>
+	<li><font color="#FF8DC7">Thailand</font></li>
+</ol>
+			<div class="Personals-desc"></div>
+		</div>
+		
+		<div class="Personal-img">
+			<img src="asset/image/photo17.jpeg">
+		</div>
+	</div>
+</div>
+</section>
+
+
+
+<section id="Footer">
+	<div class="ftr">Follow me
+<br>
+	<a href="https://www.tiktok.com/@cosa.my?is_from_webapp=1&sender_device=pc" Target="_blank"><img src="asset/image/tik-tok.png" width="40px"></a>
+	<a href="https://www.instagram.com/syaaminus/" Target="_blank"><img src="asset/image/instagram.png" width="40px"></a>
+	</div>
+<br><br>
+<marquee>THANK YOU ;)</marquee>
+	
+</section>
+
+
+
+<script>
+var menuBtn = document.getElementById("menuBtn")
+var sideNav = document.getElementById("sideNav")
+var menu = document.getElementById("menu")
+
+menuBtn.onclick = function(){
+	if (sideNav.style.right== "-250px") {
+		sideNav.style.right = "0";
+	}
+	else {
+		sideNav.style.right = "-250px";
+	}
+}
+
+</script>
+
+
+</body>
+</html>
